@@ -90,7 +90,7 @@ inquirer.prompt ([
 
 else {
 
-var q1 = new Cloze ("...is Goku's rival", "vegeta", "Vegeta is Goku's rival")
+var q1 = new Cloze ("Vegeta", "Vegeta is Goku's rival")
 inquirer.prompt ([
 {
 	type: 'input',
@@ -100,7 +100,7 @@ inquirer.prompt ([
 ])
 
 .then(function(answer) {
-		if(answer.question1.toLowerCase() === q1.deletez)
+		if(answer.question1.toLowerCase() === q1.deletez.toLowerCase())
 {
 	console.log("Correct")
 	score++;
@@ -111,7 +111,7 @@ inquirer.prompt ([
 		console.log (q1.full)
 	};
 
-var q2 = new Cloze ("Vegeta defeated Android ... after tearing off his arm", "19", "Vegeta defeated Android 19 after tearing off his arm")
+var q2 = new Cloze ("19", "Vegeta defeated Android 19 after tearing off his arm")
 inquirer.prompt ([
 {
 	type: 'input',
@@ -132,7 +132,7 @@ inquirer.prompt ([
 		console.log (q2.full)
 	};
 
-var q3 = new Cloze ("... is the brother of Vegeta", "tarble", "Tarble is brother of Vegeta")
+var q3 = new Cloze ("Tarble", "Tarble is brother of Vegeta")
 inquirer.prompt ([
 {
 	type: 'input',
@@ -142,7 +142,7 @@ inquirer.prompt ([
 ])
 
 .then(function(answer) {
-		if(answer.question3.toLowerCase() === q3.deletez)
+		if(answer.question3.toLowerCase() === q3.deletez.toLowerCase())
 {
 	console.log("Correct")
 	score++;
@@ -162,7 +162,6 @@ else {
 })
 })
 }
-
 })
 
 
